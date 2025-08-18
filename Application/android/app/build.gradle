@@ -119,7 +119,7 @@ android {
     release {
       // You need to specify either an absolute path or include the
       // keystore file in the same directory as the build.gradle file.
-      storeFile file("egoflapp_certificate.jks")
+      storeFile file("neosysapp_certificate.jks")
       storePassword "Pabaq438"
       keyAlias "neosysapp"
       keyPassword "Pabaq438"
