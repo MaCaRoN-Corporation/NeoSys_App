@@ -114,24 +114,24 @@ pipeline {
                         echo '[!!!!!!!!!!!!!!!!] INTERNAL VERSION [!!!!!!!!!!!!!!!!!]'
                         echo '[!!!] Publishing Android Bundle in Play Store ... [!!!]'
                         echo '[!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]'
-                        androidApkUpload googleCredentialsId: 'Google_Play_Store', apkFilesPattern: 'Application/Releases/internal_versions/*-release.aab', rolloutPercentage: '100', trackName: 'internal' // internal/alpha/beta/production
+                        androidApkUpload googleCredentialsId: 'Google_Play_Store-NeoSys_App', apkFilesPattern: 'Application/Releases/internal_versions/*-release.aab', rolloutPercentage: '100', trackName: 'internal' // internal/alpha/beta/production
                     } else if (VERSION_TYPE == "alpha") {
                         echo '[!!!!!!!!!!!!!!!!!!] ALPHA VERSION [!!!!!!!!!!!!!!!!!!]'
                         echo '[!!!] Publishing Android Bundle in Play Store ... [!!!]'
                         echo '[!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]'
-                        androidApkUpload googleCredentialsId: 'Google_Play_Store', apkFilesPattern: 'Application/Releases/alpha_versions/*-release.aab', rolloutPercentage: '100', trackName: 'alpha' // internal/alpha/beta/production
+                        androidApkUpload googleCredentialsId: 'Google_Play_Store-NeoSys_App', apkFilesPattern: 'Application/Releases/alpha_versions/*-release.aab', rolloutPercentage: '100', trackName: 'alpha' // internal/alpha/beta/production
                     } else if (VERSION_TYPE == "beta") {
                         echo '[!!!!!!!!!!!!!!!!!!] BETA VERSION [!!!!!!!!!!!!!!!!!!!]'
                         echo '[!!!] Publishing Android Bundle in Play Store ... [!!!]'
                         echo '[!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]'
                         // timeout(time: 5, unit: 'MINUTES') { input message:'Voulez-vous vraiment livrer en TEST OUVERT ?' }
-                        // androidApkUpload googleCredentialsId: 'Google_Play_Store', apkFilesPattern: 'Application/Releases/beta_versions/*-release.aab', rolloutPercentage: '100', trackName: 'beta' // internal/alpha/beta/production
+                        // androidApkUpload googleCredentialsId: 'Google_Play_Store-NeoSys_App', apkFilesPattern: 'Application/Releases/beta_versions/*-release.aab', rolloutPercentage: '100', trackName: 'beta' // internal/alpha/beta/production
                     } else if (VERSION_TYPE == "production") {
                         echo '[!!!!!!!!!!!!!!!] PRODUCTION VERSION [!!!!!!!!!!!!!!!!]'
                         echo '[!!!] Publishing Android Bundle in Play Store ... [!!!]'
                         echo '[!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]'
                         // timeout(time: 5, unit: 'MINUTES') { input message:'Voulez-vous vraiment livrer en PRODUCTION ?' }
-                        // androidApkUpload googleCredentialsId: 'Google_Play_Store', apkFilesPattern: 'Application/Releases/production_versions/*-release.aab', rolloutPercentage: '100', trackName: 'production' // internal/alpha/beta/production
+                        // androidApkUpload googleCredentialsId: 'Google_Play_Store-NeoSys_App', apkFilesPattern: 'Application/Releases/production_versions/*-release.aab', rolloutPercentage: '100', trackName: 'production' // internal/alpha/beta/production
                     } else {
                         echo 'Publishing failed, try again looser !'
                     }
