@@ -39,10 +39,10 @@ pipeline {
                     sh "mv -n NeoSys_App-Releases/android/app/* Application/android/app"
                     sh "rm -rf NeoSys_App-Releases/"
 
-                    sh "git clone https://github.com/MaCaRoN-Corporation/E-Golf_App-Dependencies.git"
-                    sh "mv -n E-Golf_App-Dependencies/Application/* Application/"
-                    sh "mv -n E-Golf_App-Dependencies/Application/android/* Application/android"
-                    sh "rm -rf E-Golf_App-Dependencies/"
+                    sh "git clone https://github.com/MaCaRoN-Corporation/NeoSys_App-Dependencies.git"
+                    sh "mv -n NeoSys_App-Dependencies/Application/* Application/"
+                    sh "mv -n NeoSys_App-Dependencies/Application/android/* Application/android"
+                    sh "rm -rf NeoSys_App-Dependencies/"
                 }
             }
         }
