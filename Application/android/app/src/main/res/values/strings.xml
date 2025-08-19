@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">NeoSys App</string>
+    <string name="title_activity_main">NeoSys App</string>
+    <string name="package_name">com.macaron.neosysapp</string>
+    <string name="custom_url_scheme">com.macaron.neosysapp</string>
+</resources>
