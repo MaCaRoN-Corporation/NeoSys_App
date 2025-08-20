@@ -16,8 +16,8 @@
     </style>
 
 
-    <!-- <style name="AppTheme.NoActionBarLaunch" parent="Theme.SplashScreen"/> -->
-    <style name="AppTheme.NoActionBarLaunch" parent="AppTheme.NoActionBar">
+    <style name="AppTheme.NoActionBarLaunch" parent="Theme.SplashScreen"/>
+    <!-- <style name="AppTheme.NoActionBarLaunch" parent="AppTheme.NoActionBar">
         <item name="android:background">@drawable/ic_launcher_background</item>
-    </style>
+    </style> -->
 </resources>
