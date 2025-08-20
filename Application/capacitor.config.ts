@@ -5,9 +5,10 @@ const config: CapacitorConfig = {
   appName: 'NeoSys App',
   webDir: 'www',
   server: {
-    hostname: 'neosysapp.macaron.com',
-    allowNavigation: ['*'],
-    cleartext: true
+    androidScheme: 'https',
+    // hostname: 'neosysapp.macaron.com',
+    // allowNavigation: ['*'],
+    // cleartext: true
   },
   SplashScreen: {
     launchAutoHide: true,
