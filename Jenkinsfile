@@ -113,7 +113,7 @@ pipeline {
                     if (VERSION_TYPE == "internal") {
                         echo '[!!!!!!!!!!!!!!!!] INTERNAL VERSION [!!!!!!!!!!!!!!!!!]'
                         echo '[!!!] Publishing Android Bundle in Play Store ... [!!!]'
-                        echo '[!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!] filesPattern'
+                        echo '[!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]'
                         androidApkUpload googleCredentialsId: 'Google_Play_Store-NeoSys_App', filesPattern: 'Application/Releases/internal_versions/*-release.aab', rolloutPercentage: '100', trackName: 'internal' // internal/alpha/beta/production
                     } else if (VERSION_TYPE == "alpha") {
                         echo '[!!!!!!!!!!!!!!!!!!] ALPHA VERSION [!!!!!!!!!!!!!!!!!!]'
