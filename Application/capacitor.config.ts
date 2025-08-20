@@ -5,7 +5,9 @@ const config: CapacitorConfig = {
   appName: 'NeoSys App',
   webDir: 'www',
   server: {
-    androidScheme: 'https'
+    androidScheme: 'https',
+    allowNavigation: ['*'],
+    cleartext: true
   },
   SplashScreen: {
     launchAutoHide: true,
