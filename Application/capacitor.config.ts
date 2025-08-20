@@ -18,7 +18,7 @@ const config: CapacitorConfig = {
     preferences: {
       LottieFullScreen: "true",
       LottieHideAfterAnimationEnd: "true",
-      LottieAnimationLocation: "public/assets/splash.json",
+      LottieAnimationLocation: "assets/public/assets/splash.json",
       LottieScaleType: "CENTER_CROP",
       LottieFadeOutDuration: "300",
       LottieCancelOnTap: "true"
