@@ -9,7 +9,7 @@
 
   <preference name="LottieFullScreen" value="true" />
   <preference name="LottieHideAfterAnimationEnd" value="true" />
-  <preference name="LottieAnimationLocation" value="../../assets/public/assets/splash.json" />
+  <preference name="LottieAnimationLocation" value="www/assets/splash.json" />
   <preference name="LottieScaleType" value="CENTER_CROP" />
   <preference name="LottieFadeOutDuration" value="300" />
   <preference name="LottieCancelOnTap" value="true" />

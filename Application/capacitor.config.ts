@@ -10,7 +10,7 @@ const config: CapacitorConfig = {
     // allowNavigation: ['*'],
     // cleartext: true
   },
-  SplashScreen: {
+  splashScreen: {
     launchAutoHide: true,
     launchShowDuration: 0
   },
@@ -18,7 +18,7 @@ const config: CapacitorConfig = {
     preferences: {
       LottieFullScreen: "true",
       LottieHideAfterAnimationEnd: "true",
-      LottieAnimationLocation: "../../assets/public/assets/splash.json",
+      LottieAnimationLocation: "assets/splash.json",
       LottieScaleType: "CENTER_CROP",
       LottieFadeOutDuration: "300",
       LottieCancelOnTap: "true"
