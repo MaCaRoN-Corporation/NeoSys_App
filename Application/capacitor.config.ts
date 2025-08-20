@@ -5,7 +5,7 @@ const config: CapacitorConfig = {
   appName: 'NeoSys App',
   webDir: 'www',
   server: {
-    androidScheme: 'https',
+    hostname: 'neosysapp.macaron.com',
     allowNavigation: ['*'],
     cleartext: true
   },
