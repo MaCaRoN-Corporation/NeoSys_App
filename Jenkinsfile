@@ -58,7 +58,6 @@ pipeline {
         //         // npm install @ionic-native/ionic-webview'''
 
                     sh '''cd Application/
-                    ng analytics off
                     ionic build
                     ionic capacitor build android
                     '''
