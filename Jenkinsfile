@@ -65,7 +65,8 @@ pipeline {
                     // '''
 
                     sh '''cd Application/
-                    ionic cordova platfom build android --prod --release
+                    sudo ionic build --prod
+                    sudo ionic capacitor build android
                     '''
             }
         }
