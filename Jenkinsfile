@@ -47,9 +47,9 @@ pipeline {
             }
         }
       
-        // stage('TEST') {
-        //     when { expression { SKIP_ALL_STAGES != true } }
-        //     steps {
+        stage('IONIC BUILD') {
+            when { expression { SKIP_ALL_STAGES != true } }
+            steps {
         //         // sh '''cd Application/
         //         // ionic cordova platform remove android
         //         // ionic cordova platform add android@latest
@@ -57,12 +57,12 @@ pipeline {
         //         // cordova plugin add cordova-plugin-ionic-webview
         //         // npm install @ionic-native/ionic-webview'''
 
-        //         // sh '''cd Application/
-        //         // ionic build
-        //         // ionic capacitor build android
-        //         // '''
-        //     }
-        // }
+                sh '''cd Application/
+                ionic build
+                ionic capacitor build android
+                '''
+            }
+        }
       
         stage('SIGN BUNDLE CREATION') {
             when { expression { SKIP_ALL_STAGES != true } }
