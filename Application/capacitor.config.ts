@@ -5,10 +5,7 @@ const config: CapacitorConfig = {
   appName: 'NeoSys App',
   webDir: 'www',
   server: {
-    androidScheme: 'https',
-    // hostname: 'neosysapp.macaron.com',
-    // allowNavigation: ['*'],
-    // cleartext: true
+    androidScheme: 'https'
   },
   SplashScreen: {
     launchAutoHide: true,
@@ -18,7 +15,7 @@ const config: CapacitorConfig = {
     preferences: {
       LottieFullScreen: "true",
       LottieHideAfterAnimationEnd: "true",
-      LottieAnimationLocation: "assets/public/assets/splash.json",
+      LottieAnimationLocation: "public/assets/splash.json",
       LottieScaleType: "CENTER_CROP",
       LottieFadeOutDuration: "300",
       LottieCancelOnTap: "true"
