@@ -64,16 +64,9 @@ pipeline {
                     // ionic capacitor build android
                     // '''
 
-                    withCredentials([string(credentialsId: 'sudo_pass', variable: 'SUDO_PW')]) {
-                        sh ''' 
-                        echo $SUDO_PW | sudo -v -S
-                        ''' 
-                        // sudo umount -l /dev/sda1
-                    }
-
                     sh '''cd Application/
-                    sudo ionic build --prod
-                    sudo ionic capacitor build android
+                    ionic build --prod
+                    ionic capacitor build android
                     '''
             }
         }
