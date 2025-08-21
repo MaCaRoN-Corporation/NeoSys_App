@@ -47,31 +47,29 @@ pipeline {
             }
         }
       
-        stage('IONIC BUILD') {
-            when { expression { SKIP_ALL_STAGES != true } }
-            steps {
-        //         // sh '''cd Application/
-        //         // ionic cordova platform remove android
-        //         // ionic cordova platform add android@latest
-        //         // ionic cordova plugin rm cordova-plugin-ionic-webview
-        //         // cordova plugin add cordova-plugin-ionic-webview
-        //         // npm install @ionic-native/ionic-webview'''
+        // stage('IONIC BUILD') {
+        //     when { expression { SKIP_ALL_STAGES != true } }
+        //     steps {
+        // //         // sh '''cd Application/
+        // //         // ionic cordova platform remove android
+        // //         // ionic cordova platform add android@latest
+        // //         // ionic cordova plugin rm cordova-plugin-ionic-webview
+        // //         // cordova plugin add cordova-plugin-ionic-webview
+        // //         // npm install @ionic-native/ionic-webview'''
 
-                    // sh '''cd Application/
-                    // npm rebuild
-                    // sudo chmod 755 -R /usr/local/lib/node_modules/@ionic/cli/node_modules
-                    // ionic build --prod
-                    // ionic capacitor build android
-                    // '''
+        //             // sh '''cd Application/
+        //             // npm rebuild
+        //             // sudo chmod 755 -R /usr/local/lib/node_modules/@ionic/cli/node_modules
+        //             // ionic build --prod
+        //             // ionic capacitor build android
+        //             // '''
 
-                    script {
-                        sh '''cd Application/
-                        sudo ionic build --prod
-                        sudo ionic capacitor build android
-                        '''
-                    }
-            }
-        }
+        //             // sh '''cd Application/
+        //             // sudo ionic build --prod
+        //             // sudo ionic capacitor build android
+        //             // '''
+        //     }
+        // }
       
         stage('SIGN BUNDLE CREATION') {
             when { expression { SKIP_ALL_STAGES != true } }
