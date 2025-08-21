@@ -47,23 +47,23 @@ pipeline {
             }
         }
       
-        // stage('IONIC BUILD') {
-        //     when { expression { SKIP_ALL_STAGES != true } }
-        //     steps {
-        // //         // sh '''cd Application/
-        // //         // ionic cordova platform remove android
-        // //         // ionic cordova platform add android@latest
-        // //         // ionic cordova plugin rm cordova-plugin-ionic-webview
-        // //         // cordova plugin add cordova-plugin-ionic-webview
-        // //         // npm install @ionic-native/ionic-webview'''
-
+        stage('IONIC BUILD') {
+            when { expression { SKIP_ALL_STAGES != true } }
+            steps {
         //         // sh '''cd Application/
-        //         // npx ionic cordova build android --release
-        //         // ionic build
-        //         // ionic capacitor build android
-        //         // '''
-        //     }
-        // }
+        //         // ionic cordova platform remove android
+        //         // ionic cordova platform add android@latest
+        //         // ionic cordova plugin rm cordova-plugin-ionic-webview
+        //         // cordova plugin add cordova-plugin-ionic-webview
+        //         // npm install @ionic-native/ionic-webview'''
+
+                    sh '''cd Application/
+                    ng analytics off
+                    ionic build
+                    ionic capacitor build android
+                    '''
+            }
+        }
       
         stage('SIGN BUNDLE CREATION') {
             when { expression { SKIP_ALL_STAGES != true } }
