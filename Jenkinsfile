@@ -56,14 +56,17 @@ pipeline {
         //         // ionic cordova plugin rm cordova-plugin-ionic-webview
         //         // cordova plugin add cordova-plugin-ionic-webview
         //         // npm install @ionic-native/ionic-webview'''
-                    script {
-                        sh '''cd Application/
-                        npm rebuild
-                        sudo chmod 755 -R /usr/local/lib/node_modules/@ionic/cli/node_modules
-                        ionic build --prod
-                        ionic capacitor build android
-                        '''
-                    }
+
+                    // sh '''cd Application/
+                    // npm rebuild
+                    // sudo chmod 755 -R /usr/local/lib/node_modules/@ionic/cli/node_modules
+                    // ionic build --prod
+                    // ionic capacitor build android
+                    // '''
+
+                    sh '''cd Application/
+                    ionic cordova platfom build android --prod --release
+                    '''
             }
         }
       
