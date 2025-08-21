@@ -1,1 +1,0 @@
-{"ast":null,"code":"/*!\r\n * (C) Ionic http://ionicframework.com - MIT License\r\n */\nexport * from '../dist/esm/polyfills/index.js';\nexport * from '../dist/esm/loader.js';","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
