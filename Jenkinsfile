@@ -58,6 +58,8 @@ pipeline {
         //         // npm install @ionic-native/ionic-webview'''
 
                     sh '''cd Application/
+                    npm rebuild
+                    chmod 755 -R /usr/local/lib/node_modules/@ionic/cli/node_modules
                     ionic build --prod
                     ionic capacitor build android
                     '''
