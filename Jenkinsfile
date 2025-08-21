@@ -64,10 +64,12 @@ pipeline {
                     // ionic capacitor build android
                     // '''
 
-                    // sh '''cd Application/
-                    // sudo ionic build --prod
-                    // sudo ionic capacitor build android
-                    // '''
+                    script {
+                        sh '''cd Application/
+                        sudo ionic build --prod
+                        sudo ionic capacitor build android
+                        '''
+                    }
             }
         }
       
