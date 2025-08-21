@@ -58,7 +58,7 @@ pipeline {
         //         // npm install @ionic-native/ionic-webview'''
 
                     sh '''cd Application/
-                    ionic build
+                    ionic build --prod
                     ionic capacitor build android
                     '''
             }
