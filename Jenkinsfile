@@ -140,7 +140,7 @@ pipeline {
                         // timeout(time: 5, unit: 'MINUTES') { input message:'Voulez-vous vraiment livrer en PRODUCTION ?' }
                         // androidApkUpload googleCredentialsId: 'Google_Play_Store-NeoSys_App', apkFilesPattern: 'Application/Releases/production_versions/*-release.aab', rolloutPercentage: '100', trackName: 'production' // internal/alpha/beta/production
                     } else {
-                        echo 'Publishing failed, try again looser !'
+                        echo 'Publishing failed, try again looser !' 
                     }
                 }
             }
