@@ -65,8 +65,6 @@ pipeline {
                     // '''
 
                     sh '''cd Application/
-                    npm rebuild
-                    chmod 755 -R
                     ionic build --prod
                     ionic capacitor build android
                     '''
