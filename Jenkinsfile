@@ -65,8 +65,8 @@ pipeline {
                     // '''
 
                     sh '''cd Application/
-                    ionic build --prod
-                    ionic capacitor build android
+                    npx ionic build --prod
+                    npx ionic capacitor build android
                     '''
             }
         }
